@@ -1,0 +1,511 @@
+# Install script for directory: C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples
+
+# Set the install prefix
+if(NOT DEFINED CMAKE_INSTALL_PREFIX)
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files/Simbody")
+endif()
+string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
+
+# Set the install configuration name.
+if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
+  if(BUILD_TYPE)
+    string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
+           CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
+  else()
+    set(CMAKE_INSTALL_CONFIG_NAME "Release")
+  endif()
+  message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
+endif()
+
+# Set the component getting installed.
+if(NOT CMAKE_INSTALL_COMPONENT)
+  if(COMPONENT)
+    message(STATUS "Install component: \"${COMPONENT}\"")
+    set(CMAKE_INSTALL_COMPONENT "${COMPONENT}")
+  else()
+    set(CMAKE_INSTALL_COMPONENT)
+  endif()
+endif()
+
+# Is this installation the result of a crosscompile?
+if(NOT DEFINED CMAKE_CROSSCOMPILING)
+  set(CMAKE_CROSSCOMPILING "FALSE")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/Release/ChainExample.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/MinSizeRel/ChainExample.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/RelWithDebInfo/ChainExample.exe")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/Release/ConstrainedNumericalDiffOptimization.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/MinSizeRel/ConstrainedNumericalDiffOptimization.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/RelWithDebInfo/ConstrainedNumericalDiffOptimization.exe")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/Release/ConstrainedOptimization.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/MinSizeRel/ConstrainedOptimization.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/RelWithDebInfo/ConstrainedOptimization.exe")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/Release/Differentiator.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/MinSizeRel/Differentiator.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/RelWithDebInfo/Differentiator.exe")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/Release/DzhanibekovEffect.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/MinSizeRel/DzhanibekovEffect.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/RelWithDebInfo/DzhanibekovEffect.exe")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/Release/ExampleAmysIKProblem.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/MinSizeRel/ExampleAmysIKProblem.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/RelWithDebInfo/ExampleAmysIKProblem.exe")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/Release/ExampleAssemblerPlayground.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/MinSizeRel/ExampleAssemblerPlayground.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/RelWithDebInfo/ExampleAssemblerPlayground.exe")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/Release/ExampleCablePath.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/MinSizeRel/ExampleCablePath.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/RelWithDebInfo/ExampleCablePath.exe")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/Release/ExampleClosedTopologyMechanism.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/MinSizeRel/ExampleClosedTopologyMechanism.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/RelWithDebInfo/ExampleClosedTopologyMechanism.exe")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/Release/ExampleContactPlayground.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/MinSizeRel/ExampleContactPlayground.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/RelWithDebInfo/ExampleContactPlayground.exe")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/Release/ExampleCustomConstraint.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/MinSizeRel/ExampleCustomConstraint.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/RelWithDebInfo/ExampleCustomConstraint.exe")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/Release/ExampleEventHandler.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/MinSizeRel/ExampleEventHandler.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/RelWithDebInfo/ExampleEventHandler.exe")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/Release/ExampleEventReporter.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/MinSizeRel/ExampleEventReporter.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/RelWithDebInfo/ExampleEventReporter.exe")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/Release/ExampleGears.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/MinSizeRel/ExampleGears.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/RelWithDebInfo/ExampleGears.exe")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/Release/ExampleGeodesic.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/MinSizeRel/ExampleGeodesic.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/RelWithDebInfo/ExampleGeodesic.exe")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/Release/ExampleIMUTracking.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/MinSizeRel/ExampleIMUTracking.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/RelWithDebInfo/ExampleIMUTracking.exe")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/Release/ExampleKneeJoint.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/MinSizeRel/ExampleKneeJoint.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/RelWithDebInfo/ExampleKneeJoint.exe")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/Release/ExampleLongPendulum.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/MinSizeRel/ExampleLongPendulum.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/RelWithDebInfo/ExampleLongPendulum.exe")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/Release/ExampleMotor-TorqueLimited-Constraint.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/MinSizeRel/ExampleMotor-TorqueLimited-Constraint.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/RelWithDebInfo/ExampleMotor-TorqueLimited-Constraint.exe")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/Release/ExampleMotor-TorqueLimited-Controller.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/MinSizeRel/ExampleMotor-TorqueLimited-Controller.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/RelWithDebInfo/ExampleMotor-TorqueLimited-Controller.exe")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/Release/ExampleMotor-TorqueLimited-Motion.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/MinSizeRel/ExampleMotor-TorqueLimited-Motion.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/RelWithDebInfo/ExampleMotor-TorqueLimited-Motion.exe")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/Release/ExampleMotorWithSpeedControl.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/MinSizeRel/ExampleMotorWithSpeedControl.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/RelWithDebInfo/ExampleMotorWithSpeedControl.exe")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/Release/ExamplePendulum.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/MinSizeRel/ExamplePendulum.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/RelWithDebInfo/ExamplePendulum.exe")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/Release/ExampleSampleAndHold.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/MinSizeRel/ExampleSampleAndHold.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/RelWithDebInfo/ExampleSampleAndHold.exe")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/Release/ExampleScissorLift.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/MinSizeRel/ExampleScissorLift.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/RelWithDebInfo/ExampleScissorLift.exe")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/Release/ExampleSimplePlanarMechanism.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/MinSizeRel/ExampleSimplePlanarMechanism.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/RelWithDebInfo/ExampleSimplePlanarMechanism.exe")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/Release/ExampleTwoBoxCollide.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/MinSizeRel/ExampleTwoBoxCollide.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/RelWithDebInfo/ExampleTwoBoxCollide.exe")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/Release/ExampleWrapping.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/MinSizeRel/ExampleWrapping.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/RelWithDebInfo/ExampleWrapping.exe")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/Release/JaredsDude.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/MinSizeRel/JaredsDude.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/RelWithDebInfo/JaredsDude.exe")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/Release/ParameterConstrainedOptimization.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/MinSizeRel/ParameterConstrainedOptimization.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/RelWithDebInfo/ParameterConstrainedOptimization.exe")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/Release/PendulumNoViz.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/MinSizeRel/PendulumNoViz.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/RelWithDebInfo/PendulumNoViz.exe")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/Release/Rattleback.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/MinSizeRel/Rattleback.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/RelWithDebInfo/Rattleback.exe")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/Release/SimbodyInstallTest.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/MinSizeRel/SimbodyInstallTest.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/RelWithDebInfo/SimbodyInstallTest.exe")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/Release/SimbodyInstallTestNoViz.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/MinSizeRel/SimbodyInstallTestNoViz.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/RelWithDebInfo/SimbodyInstallTestNoViz.exe")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/Release/SimpleDifferentiator.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/MinSizeRel/SimpleDifferentiator.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/RelWithDebInfo/SimpleDifferentiator.exe")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/Release/SimpleIntegrator.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/MinSizeRel/SimpleIntegrator.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/RelWithDebInfo/SimpleIntegrator.exe")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/Release/TheoJansenStrandbeest.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/MinSizeRel/TheoJansenStrandbeest.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/RelWithDebInfo/TheoJansenStrandbeest.exe")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/Release/UnconstrainedNumericalDiffOptimization.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/MinSizeRel/UnconstrainedNumericalDiffOptimization.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/RelWithDebInfo/UnconstrainedNumericalDiffOptimization.exe")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/Release/UnconstrainedOptimization.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/MinSizeRel/UnconstrainedOptimization.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/RelWithDebInfo/UnconstrainedOptimization.exe")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/Release/UserGuide.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/MinSizeRel/UserGuide.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/RelWithDebInfo/UserGuide.exe")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/Release/UserGuideLimits.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/MinSizeRel/UserGuideLimits.exe")
+  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/bin" TYPE EXECUTABLE FILES "C:/Users/Rafael/Desktop/Trabajo2/build/RelWithDebInfo/UserGuideLimits.exe")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/src" TYPE FILE FILES
+    "C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/ChainExample.cpp"
+    "C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/ConstrainedNumericalDiffOptimization.cpp"
+    "C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/ConstrainedOptimization.cpp"
+    "C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/Differentiator.cpp"
+    "C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/DzhanibekovEffect.cpp"
+    "C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/ExampleAmysIKProblem.cpp"
+    "C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/ExampleAssemblerPlayground.cpp"
+    "C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/ExampleCablePath.cpp"
+    "C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/ExampleClosedTopologyMechanism.cpp"
+    "C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/ExampleContactPlayground.cpp"
+    "C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/ExampleCustomConstraint.cpp"
+    "C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/ExampleEventHandler.cpp"
+    "C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/ExampleEventReporter.cpp"
+    "C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/ExampleGears.cpp"
+    "C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/ExampleGeodesic.cpp"
+    "C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/ExampleIMUTracking.cpp"
+    "C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/ExampleKneeJoint.cpp"
+    "C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/ExampleLongPendulum.cpp"
+    "C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/ExampleMotor-TorqueLimited-Constraint.cpp"
+    "C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/ExampleMotor-TorqueLimited-Controller.cpp"
+    "C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/ExampleMotor-TorqueLimited-Motion.cpp"
+    "C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/ExampleMotorWithSpeedControl.cpp"
+    "C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/ExamplePendulum.cpp"
+    "C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/ExampleSampleAndHold.cpp"
+    "C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/ExampleScissorLift.cpp"
+    "C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/ExampleSimplePlanarMechanism.cpp"
+    "C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/ExampleTwoBoxCollide.cpp"
+    "C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/ExampleWrapping.cpp"
+    "C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/JaredsDude.cpp"
+    "C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/ParameterConstrainedOptimization.cpp"
+    "C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/PendulumNoViz.cpp"
+    "C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/Rattleback.cpp"
+    "C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/SimbodyInstallTest.cpp"
+    "C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/SimbodyInstallTestNoViz.cpp"
+    "C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/SimpleDifferentiator.cpp"
+    "C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/SimpleIntegrator.cpp"
+    "C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/TheoJansenStrandbeest.cpp"
+    "C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/UnconstrainedNumericalDiffOptimization.cpp"
+    "C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/UnconstrainedOptimization.cpp"
+    "C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/UserGuide.cpp"
+    "C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/UserGuideLimits.cpp"
+    )
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/src/shared" TYPE DIRECTORY FILES "C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/shared/")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/src" TYPE FILE FILES "C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/README.txt")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/examples/src" TYPE FILE RENAME "CMakeLists.txt" FILES "C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/InstalledCMakeLists.txt")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for each subdirectory.
+  include("C:/Users/Rafael/Desktop/Trabajo2/build/examples/BricardMechanism/cmake_install.cmake")
+  include("C:/Users/Rafael/Desktop/Trabajo2/build/examples/Gazebo2Simbody/cmake_install.cmake")
+  include("C:/Users/Rafael/Desktop/Trabajo2/build/examples/TaskSpaceControl-UR10/cmake_install.cmake")
+  include("C:/Users/Rafael/Desktop/Trabajo2/build/examples/TaskSpaceControl-Atlas/cmake_install.cmake")
+
+endif()
+

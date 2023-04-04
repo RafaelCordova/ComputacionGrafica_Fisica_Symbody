@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1A4EBBD3-6493-3E45-A8DC-45D6BE4D2B25}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>Example - ExampleIMUTracking</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Rafael\Desktop\Trabajo2\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ExampleIMUTracking.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ExampleIMUTracking</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Rafael\Desktop\Trabajo2\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ExampleIMUTracking.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ExampleIMUTracking</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Rafael\Desktop\Trabajo2\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ExampleIMUTracking.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ExampleIMUTracking</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Rafael\Desktop\Trabajo2\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ExampleIMUTracking.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ExampleIMUTracking</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Rafael\Desktop\Trabajo2\simbody-master\Platform\Windows\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\.\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Scalar\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\SmallMatrix\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Mechanics\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\BigMatrix\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Geometry\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Simulation\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Random\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Polynomial\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\.\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\LinearAlgebra\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\Integrators\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\Optimizers\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\Geometry\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\Simbody\.\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\Simbody\Visualizer\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\examples;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_DEBUG;SIMBODY_EXAMPLE_NAME=ExampleIMUTracking;SimTK_SIMBODY_COPYRIGHT_YEARS="2005-20";SimTK_SIMBODY_AUTHORS="Michael.Sherman_Peter.Eastman";SIMBODY_EXAMPLES_INSTALL_SRC="C:/Program Files/Simbody/examples/src/";CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;SIMBODY_EXAMPLE_NAME=ExampleIMUTracking;SimTK_SIMBODY_COPYRIGHT_YEARS=\"2005-20\";SimTK_SIMBODY_AUTHORS=\"Michael.Sherman_Peter.Eastman\";SIMBODY_EXAMPLES_INSTALL_SRC=\"C:/Program Files/Simbody/examples/src/\";CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Rafael\Desktop\Trabajo2\simbody-master\Platform\Windows\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\.\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Scalar\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\SmallMatrix\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Mechanics\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\BigMatrix\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Geometry\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Simulation\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Random\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Polynomial\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\.\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\LinearAlgebra\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\Integrators\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\Optimizers\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\Geometry\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\Simbody\.\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\Simbody\Visualizer\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\examples;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Rafael\Desktop\Trabajo2\simbody-master\Platform\Windows\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\.\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Scalar\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\SmallMatrix\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Mechanics\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\BigMatrix\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Geometry\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Simulation\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Random\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Polynomial\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\.\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\LinearAlgebra\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\Integrators\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\Optimizers\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\Geometry\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\Simbody\.\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\Simbody\Visualizer\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\examples;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\Debug\SimTKsimbody_d.lib;..\Debug\SimTKmath_d.lib;..\Debug\SimTKcommon_d.lib;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\Platform\Windows\lib_x64\liblapack.lib;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\Platform\Windows\lib_x64\libblas.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Rafael/Desktop/Trabajo2/build/Debug/ExampleIMUTracking.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Rafael/Desktop/Trabajo2/build/Debug/ExampleIMUTracking.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Rafael\Desktop\Trabajo2\simbody-master\Platform\Windows\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\.\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Scalar\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\SmallMatrix\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Mechanics\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\BigMatrix\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Geometry\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Simulation\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Random\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Polynomial\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\.\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\LinearAlgebra\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\Integrators\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\Optimizers\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\Geometry\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\Simbody\.\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\Simbody\Visualizer\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\examples;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;SIMBODY_EXAMPLE_NAME=ExampleIMUTracking;SimTK_SIMBODY_COPYRIGHT_YEARS="2005-20";SimTK_SIMBODY_AUTHORS="Michael.Sherman_Peter.Eastman";SIMBODY_EXAMPLES_INSTALL_SRC="C:/Program Files/Simbody/examples/src/";CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;SIMBODY_EXAMPLE_NAME=ExampleIMUTracking;SimTK_SIMBODY_COPYRIGHT_YEARS=\"2005-20\";SimTK_SIMBODY_AUTHORS=\"Michael.Sherman_Peter.Eastman\";SIMBODY_EXAMPLES_INSTALL_SRC=\"C:/Program Files/Simbody/examples/src/\";CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Rafael\Desktop\Trabajo2\simbody-master\Platform\Windows\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\.\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Scalar\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\SmallMatrix\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Mechanics\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\BigMatrix\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Geometry\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Simulation\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Random\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Polynomial\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\.\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\LinearAlgebra\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\Integrators\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\Optimizers\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\Geometry\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\Simbody\.\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\Simbody\Visualizer\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\examples;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Rafael\Desktop\Trabajo2\simbody-master\Platform\Windows\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\.\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Scalar\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\SmallMatrix\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Mechanics\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\BigMatrix\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Geometry\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Simulation\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Random\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Polynomial\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\.\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\LinearAlgebra\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\Integrators\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\Optimizers\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\Geometry\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\Simbody\.\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\Simbody\Visualizer\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\examples;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\Release\SimTKsimbody.lib;..\Release\SimTKmath.lib;..\Release\SimTKcommon.lib;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\Platform\Windows\lib_x64\liblapack.lib;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\Platform\Windows\lib_x64\libblas.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Rafael/Desktop/Trabajo2/build/Release/ExampleIMUTracking.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Rafael/Desktop/Trabajo2/build/Release/ExampleIMUTracking.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Rafael\Desktop\Trabajo2\simbody-master\Platform\Windows\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\.\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Scalar\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\SmallMatrix\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Mechanics\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\BigMatrix\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Geometry\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Simulation\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Random\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Polynomial\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\.\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\LinearAlgebra\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\Integrators\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\Optimizers\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\Geometry\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\Simbody\.\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\Simbody\Visualizer\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\examples;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;SIMBODY_EXAMPLE_NAME=ExampleIMUTracking;SimTK_SIMBODY_COPYRIGHT_YEARS="2005-20";SimTK_SIMBODY_AUTHORS="Michael.Sherman_Peter.Eastman";SIMBODY_EXAMPLES_INSTALL_SRC="C:/Program Files/Simbody/examples/src/";CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;SIMBODY_EXAMPLE_NAME=ExampleIMUTracking;SimTK_SIMBODY_COPYRIGHT_YEARS=\"2005-20\";SimTK_SIMBODY_AUTHORS=\"Michael.Sherman_Peter.Eastman\";SIMBODY_EXAMPLES_INSTALL_SRC=\"C:/Program Files/Simbody/examples/src/\";CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Rafael\Desktop\Trabajo2\simbody-master\Platform\Windows\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\.\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Scalar\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\SmallMatrix\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Mechanics\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\BigMatrix\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Geometry\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Simulation\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Random\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Polynomial\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\.\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\LinearAlgebra\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\Integrators\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\Optimizers\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\Geometry\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\Simbody\.\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\Simbody\Visualizer\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\examples;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Rafael\Desktop\Trabajo2\simbody-master\Platform\Windows\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\.\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Scalar\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\SmallMatrix\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Mechanics\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\BigMatrix\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Geometry\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Simulation\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Random\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Polynomial\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\.\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\LinearAlgebra\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\Integrators\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\Optimizers\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\Geometry\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\Simbody\.\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\Simbody\Visualizer\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\examples;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\MinSizeRel\SimTKsimbody.lib;..\MinSizeRel\SimTKmath.lib;..\MinSizeRel\SimTKcommon.lib;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\Platform\Windows\lib_x64\liblapack.lib;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\Platform\Windows\lib_x64\libblas.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Rafael/Desktop/Trabajo2/build/MinSizeRel/ExampleIMUTracking.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Rafael/Desktop/Trabajo2/build/MinSizeRel/ExampleIMUTracking.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Rafael\Desktop\Trabajo2\simbody-master\Platform\Windows\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\.\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Scalar\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\SmallMatrix\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Mechanics\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\BigMatrix\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Geometry\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Simulation\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Random\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Polynomial\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\.\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\LinearAlgebra\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\Integrators\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\Optimizers\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\Geometry\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\Simbody\.\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\Simbody\Visualizer\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\examples;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;SIMBODY_EXAMPLE_NAME=ExampleIMUTracking;SimTK_SIMBODY_COPYRIGHT_YEARS="2005-20";SimTK_SIMBODY_AUTHORS="Michael.Sherman_Peter.Eastman";SIMBODY_EXAMPLES_INSTALL_SRC="C:/Program Files/Simbody/examples/src/";CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;SIMBODY_EXAMPLE_NAME=ExampleIMUTracking;SimTK_SIMBODY_COPYRIGHT_YEARS=\"2005-20\";SimTK_SIMBODY_AUTHORS=\"Michael.Sherman_Peter.Eastman\";SIMBODY_EXAMPLES_INSTALL_SRC=\"C:/Program Files/Simbody/examples/src/\";CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Rafael\Desktop\Trabajo2\simbody-master\Platform\Windows\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\.\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Scalar\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\SmallMatrix\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Mechanics\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\BigMatrix\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Geometry\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Simulation\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Random\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Polynomial\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\.\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\LinearAlgebra\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\Integrators\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\Optimizers\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\Geometry\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\Simbody\.\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\Simbody\Visualizer\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\examples;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Rafael\Desktop\Trabajo2\simbody-master\Platform\Windows\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\.\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Scalar\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\SmallMatrix\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Mechanics\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\BigMatrix\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Geometry\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Simulation\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Random\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKcommon\Polynomial\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\.\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\LinearAlgebra\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\Integrators\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\Optimizers\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\SimTKmath\Geometry\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\Simbody\.\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\Simbody\Visualizer\include;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\examples;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\RelWithDebInfo\SimTKsimbody.lib;..\RelWithDebInfo\SimTKmath.lib;..\RelWithDebInfo\SimTKcommon.lib;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\Platform\Windows\lib_x64\liblapack.lib;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\Platform\Windows\lib_x64\libblas.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Rafael/Desktop/Trabajo2/build/RelWithDebInfo/ExampleIMUTracking.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Rafael/Desktop/Trabajo2/build/RelWithDebInfo/ExampleIMUTracking.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Rafael\Desktop\Trabajo2\simbody-master\examples\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Users\Rafael\Desktop\Trabajo2\cmake-3.26.0-rc6-windows-x86_64\bin\cmake.exe -SC:/Users/Rafael/Desktop/Trabajo2/simbody-master -BC:/Users/Rafael/Desktop/Trabajo2/build --check-stamp-file C:/Users/Rafael/Desktop/Trabajo2/build/examples/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Rafael\Desktop\Trabajo2\simbody-master\examples\shared\DRC_OSRF_TaskSpaceReport.pdf;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\examples\shared\README.txt;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\examples\shared\SimbodyExampleHelper.h;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\examples\shared\TaskSpace.cpp;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\examples\shared\TaskSpace.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Rafael\Desktop\Trabajo2\build\examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Users\Rafael\Desktop\Trabajo2\cmake-3.26.0-rc6-windows-x86_64\bin\cmake.exe -SC:/Users/Rafael/Desktop/Trabajo2/simbody-master -BC:/Users/Rafael/Desktop/Trabajo2/build --check-stamp-file C:/Users/Rafael/Desktop/Trabajo2/build/examples/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Rafael\Desktop\Trabajo2\simbody-master\examples\shared\DRC_OSRF_TaskSpaceReport.pdf;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\examples\shared\README.txt;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\examples\shared\SimbodyExampleHelper.h;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\examples\shared\TaskSpace.cpp;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\examples\shared\TaskSpace.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Rafael\Desktop\Trabajo2\build\examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Users\Rafael\Desktop\Trabajo2\cmake-3.26.0-rc6-windows-x86_64\bin\cmake.exe -SC:/Users/Rafael/Desktop/Trabajo2/simbody-master -BC:/Users/Rafael/Desktop/Trabajo2/build --check-stamp-file C:/Users/Rafael/Desktop/Trabajo2/build/examples/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Rafael\Desktop\Trabajo2\simbody-master\examples\shared\DRC_OSRF_TaskSpaceReport.pdf;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\examples\shared\README.txt;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\examples\shared\SimbodyExampleHelper.h;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\examples\shared\TaskSpace.cpp;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\examples\shared\TaskSpace.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Rafael\Desktop\Trabajo2\build\examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Rafael/Desktop/Trabajo2/simbody-master/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Users\Rafael\Desktop\Trabajo2\cmake-3.26.0-rc6-windows-x86_64\bin\cmake.exe -SC:/Users/Rafael/Desktop/Trabajo2/simbody-master -BC:/Users/Rafael/Desktop/Trabajo2/build --check-stamp-file C:/Users/Rafael/Desktop/Trabajo2/build/examples/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Rafael\Desktop\Trabajo2\simbody-master\examples\shared\DRC_OSRF_TaskSpaceReport.pdf;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\examples\shared\README.txt;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\examples\shared\SimbodyExampleHelper.h;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\examples\shared\TaskSpace.cpp;C:\Users\Rafael\Desktop\Trabajo2\simbody-master\examples\shared\TaskSpace.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Rafael\Desktop\Trabajo2\build\examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Rafael\Desktop\Trabajo2\simbody-master\examples\ExampleIMUTracking.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Rafael\Desktop\Trabajo2\build\ZERO_CHECK.vcxproj">
+      <Project>{300F566B-A4EB-3B76-9C80-B2C717C0CAA5}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Rafael\Desktop\Trabajo2\build\SimTKcommon\sharedTarget\SimTKcommon.vcxproj">
+      <Project>{F230D809-0509-36E0-8CC6-45FE42F7590C}</Project>
+      <Name>SimTKcommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Rafael\Desktop\Trabajo2\build\SimTKmath\sharedTarget\SimTKmath.vcxproj">
+      <Project>{E75B3708-A558-3C0A-9DDD-0DCE3561320B}</Project>
+      <Name>SimTKmath</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Rafael\Desktop\Trabajo2\build\Simbody\sharedTarget\SimTKsimbody.vcxproj">
+      <Project>{EB9A6EFE-AB5E-3C0F-82A5-CA1304608250}</Project>
+      <Name>SimTKsimbody</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Rafael\Desktop\Trabajo2\build\Simbody\Visualizer\simbody-visualizer\simbody-visualizer.vcxproj">
+      <Project>{61358C26-ACE1-371D-A9CF-3C6D751A81E6}</Project>
+      <Name>simbody-visualizer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
